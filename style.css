@@ -1,0 +1,225 @@
+/*
+CSS3
+
+Simple web page using responsive media and CSS flexbox for FreeCodeCamp Responsive Web Design Project
+*/
+
+body
+{
+  font-family: courier;
+  text-align: center;
+  color: black;
+  background-image: linear-gradient(
+    to bottom,    
+    rgba(180, 180, 200, .6),
+    rgba(180, 200, 200, .6)),
+    url(https://monicajasper.github.io/saku-bonsai/zhao-chen-bonsai-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no;
+  
+}
+
+a:hover{color:black}
+
+#header
+{
+}
+
+#nav-bar
+{
+  position: fixed;
+}
+
+.nav-link
+{
+  margin: 5px 15px;
+  color: #004d00;
+}
+
+.logo
+{
+}
+
+#header-img /*logo*/
+{
+  width: 100px;
+  height: auto;
+}
+
+h2
+{
+  line-height: .5em; 
+}
+
+img
+{
+   max-width: 60%;
+   min-width: 150px;
+}
+
+hr
+{
+  background-color: #004d00;
+  border-color: #004d00;
+  width: 30%;
+}
+
+#about
+{
+  margin: auto 10%; 
+}
+
+#products
+{
+  display: flex;
+  align-items: space-around;
+}
+
+#seed
+{
+  flex: 1 1 25%;
+}
+
+#sapling
+{
+  flex: 1 1 25%;
+}
+
+#bonsai
+{
+  flex: 1 1 25%;
+}
+
+#desc-short, #description
+{
+  font-family: inherit;
+  margin: 5px 8%;
+}
+
+#video
+{
+  padding: 30px;
+}
+
+#form
+{
+  line-height: 1.5em;
+  color: #004d00;
+}
+
+#email
+{
+  font-family: inherit;
+  width: 200px;
+  height: 21.5px;
+}
+
+#submit
+{
+  appearance: button;
+  font-family: inherit;
+  height: 28px;
+}
+
+footer
+{
+  text-align: center;
+  font-size: 10px;
+  padding-top: 30px;
+}
+
+
+
+@media (max-width: 800px)
+{
+  #header
+  {
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: center;
+  }
+  
+  #nav-bar
+  {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    line-height: 1.8em;
+    background-color: #737380;
+  }
+  
+  h1
+  {
+    font-size: 1.8em;
+  }
+  
+  #header-img
+  {
+    margin: 0px auto;
+    height: auto;
+    min-width: 20px;
+  }
+}
+
+
+
+@media (max-width: 650px)
+{
+  body
+  {
+    font-size: 0.85em;
+  }
+  
+   #header
+  {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #nav-bar
+  {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  }
+  
+  h1
+  {
+    padding-top: 10px;  
+  }
+  
+  #header-img
+  {
+    margin: 0 auto;
+    height: auto;
+    max-width: 60vw;
+  }
+  
+  img
+  {
+   max-width: 60%;
+   min-width: 80px;
+  }
+  
+  #products
+  {
+    display: flex;
+    flex-flow: column wrap;
+  }
+}
+
+
+@media (max-width: 560px)
+{
+  #about, #description, #video, footer
+  {
+    display: none;
+  }
+  
+  #products
+  {
+    margin: 1em auto;
+  }
+}

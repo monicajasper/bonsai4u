@@ -1,0 +1,80 @@
+<!--
+HTML5
+
+Product Landing Page for FreeCodeCamp Responsive Web Design Project
+Author: Monica Jasper
+Date: November 2021
+
+Simple web page using responsive media.
+Themed for selling Bonsai-related products.
+-->
+
+<!--Note to self: Later if feeling gung ho, use the bonzai library downloaded or Art of Japanese Calligraphy okaycat from Google Font external lib search to create title text images - small responsive and larger - on machine - <link href="https://www.urbanfonts.com/fonts/Bonzai.font"   rel="stylesheet" type="text/css">-->
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Saku Bonsai - Product Landing Page</title>
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+  
+  
+<body>
+<header id="header">
+ <nav id="nav-bar">
+  <a class="nav-link" href="#header">Home</a>
+  <a class="nav-link" href="#products">Products</a>
+  <a class="nav-link" href="#contact">Contact</a>  
+ </nav>
+ <div class="logo">
+  <h1>Saku Bonsai</h1>
+  <img id="header-img" src="https://monicajasper.github.io/saku-bonsai/bonsai-logo.png" alt="b&w icon of bonsai tree">
+ </div>
+</header>
+  
+<main>  
+  <section id="about">
+    <p>Bonsai is a Japanese art form that attempts to produce a miniature replica of a full-grown tree in nature with a tray planting. Bonsai is a creative process, open to personal interpretation, but with the aim of resembling circumstances in nature. The term bonsai refers to miniaturized, container-grown trees adhering to Japanese tradition and principles.<hr>
+       Saku Bonsai endeavors to be the world's premier, one-stop bonsai resource for beginners to get started on their life-long journey, with experts to guide their bonsai through life and death.
+    </p>
+  </section>
+  
+  <section id="products">
+      <div id="seed">
+        <h2>Seedlings</h2>
+        <img src="https://monicajasper.github.io/saku-bonsai/daiga-ellaby-seedling2.jpg" alt="three pine seedling plugs with roots">
+        <p id="desc-short">Selected tree species suitable for bonsai in their early stages of growth.</p><br>
+        <p id="description">Perfect for the rugged undertaker who wants to start their bonsai journey from the very beginning.</p>
+      </div>
+      
+      <div id="sapling">
+        <h2>Saplings</h2>
+        <img src="https://monicajasper.github.io/saku-bonsai/milosz-klinowski-sapling.jpg" alt="deciduous sapling with curved trunk">
+        <p id="desc-short">Young trees with significant potential for becoming bonsai.</p><br>
+        <p id="description">Saplings provide a nice balance of time, investment, and learning.</p>
+      </div>
+
+      <div id="bonsai">
+        <h2>Bonsai</h2>
+        <img id="bonsai" src="https://monicajasper.github.io/saku-bonsai/kari-shea-bonsai.jpg" alt="artfully crafted pine bonsai tree set into oval Tokoname clay pot with a moss bed">
+        <p id="desc-short">Mature, well-established bonsais.</p><br>
+        <p id="description">Admire and care for a perfectly crafted bonsai, potted in an artisinal tray.</p>
+      </div>
+  </section>
+  
+  <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/SmAGXcAY_lE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+  <section id="contact">
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <label id="email-label" for="email">Branch out and leaf us your tree-mail:</label><br><!--alt pun Make like a leaf & fall-ow us:-->
+      <input id="email" type="email" name="email" placeholder="Email address" required>
+      <input id="submit" type="submit">
+    </form>
+  </section>
+  
+  </main>
+  
+  <footer>Images courtsey of X Y & Z. Video of Mount Tabor Oak transformation provided by Mirai Bonsai.</footer>
+  </body>
+</html>
